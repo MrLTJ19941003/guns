@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableDubboConfiguration
-public class GunsFilmApplication {
+public class GunsCinemaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GunsFilmApplication.class, args);
+        SpringApplication.run(GunsCinemaApplication.class, args);
     }
 }

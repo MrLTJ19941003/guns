@@ -26,10 +26,10 @@ public class FilmController {
 
     private static final String IMG_PRE = "www.jiangliuer.club";
 
-    @Reference(interfaceClass = FilmApi.class)
+    @Reference(interfaceClass = FilmApi.class,check = false)
     private FilmApi filmApi;
 
-    @Reference(interfaceClass = FilmAsyncApi.class,async = true)
+    @Reference(interfaceClass = FilmAsyncApi.class,async = true,check = false)
     private FilmAsyncApi filmAsyncApi;
 
 

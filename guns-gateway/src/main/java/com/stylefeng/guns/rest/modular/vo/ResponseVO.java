@@ -36,6 +36,15 @@ public class ResponseVO<M> {
         return responseVO;
     }
 
+    public static<M> ResponseVO success(M data,int nowPage ,int totalPage){
+        ResponseVO responseVO = new ResponseVO();
+        responseVO.setData(data);
+        responseVO.setStatus(0);
+        responseVO.setNowPage(nowPage);
+        responseVO.setTotalPage(totalPage);
+        return responseVO;
+    }
+
     public static<M> ResponseVO success(M data, String imgPre,int nowPage ,int totalPage){
         ResponseVO responseVO = new ResponseVO();
         responseVO.setData(data);
